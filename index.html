@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI-Powered Resume Analyzer</h1>
+        <input type="file" id="resumeUpload" accept=".pdf, .docx">
+        <textarea id="jobDescription" placeholder="Paste job description here..."></textarea>
+        <button onclick="analyzeResume()">Analyze</button>
+        <p id="result"></p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="https://unpkg.com/mammoth/mammoth.browser.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
